@@ -45,7 +45,7 @@ module "virtual_machine" {
       ip_configurations = {
         private = {
           name                          = local.resource_names.network_interface_name
-          private_ip_subnet_resource_id = module.virtual_network.subnets["example"].resource_id
+          private_ip_subnet_resource_id = module.virtual_network.subnets[0].resource_id
         }
       }
     }
@@ -53,4 +53,5 @@ module "virtual_machine" {
 
   tags = var.tags
 }
+
 
