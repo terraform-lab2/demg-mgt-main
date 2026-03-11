@@ -83,6 +83,12 @@ variable "virtual_machine_sku" {
   type = string
 }
 
+variable "virtual_machine_create" {
+  type    = bool
+  default = false
+}
+
 variable "tags" {
   type = map(string)
 }
+
