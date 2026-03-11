@@ -12,4 +12,7 @@ virtual_machine_sku = "Standard_B1ls"
 tags = {
   deployed_by = "terraform"
   environment = "dev"
+  owner       = "Fred Bloggs"
 }
+
+
